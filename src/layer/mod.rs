@@ -78,7 +78,7 @@ pub const LGP1_ID: u32 = u32::from_le_bytes(*b"LGP1");
 #[binrw]
 #[brw(repr = i32)]
 #[repr(i32)]
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Copy, Clone)]
 pub enum LayerEntryType {
     AssetNone = 00,
     BG = 0x1,
