@@ -624,7 +624,7 @@ const LAYER_CHUNK_HEADER_SIZE: usize = 24;
 #[bw(import(string_heap: &mut StringHeap))]
 #[allow(dead_code)] // most of the fields are unused at the moment
 pub struct InstanceObject {
-    asset_type: LayerEntryType,
+    pub asset_type: LayerEntryType,
     pub instance_id: u32,
     #[brw(args(string_heap))]
     pub name: HeapString,
